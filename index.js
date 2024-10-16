@@ -71,7 +71,7 @@ client.on('interactionCreate',async interaction =>{
 
             console.log(`keyword is: ${word} and limit is: ${limit}`)
             console.log(messages)
-            interaction.reply(`**Searching for keyword: ${word} and limit: ${limit}:** \n\n ${msgString}`)
+            interaction.reply({content: `**Searching for keyword: ${word} and limit: ${limit}:** \n\n ${msgString}`, ephemeral: true})
         } 
     }
 })
